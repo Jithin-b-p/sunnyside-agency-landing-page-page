@@ -22,6 +22,23 @@
   font-display: swap;
 }
 
+:root {
+  --ff-default: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  --ff-primary: "Barlow SemiBold", var(--ff-default);
+  --ff-secondary: "Fraunces 144pt Black", var(--ff-default);
+
+  --clr-neutral-100: 212 27% 19%;
+  --clr-neutral-200: 213 9% 39%;
+  --clr-neutral-300: 232 10% 55%;
+  --clr-neutral-400: 210 4% 67%;
+  --clr-neutral-500: 0 0% 100%;
+}
+
 html {
-  font-family: "Barlow SemiBold", sans-serif;
+  font-family: var(--ff-primary);
+}
+
+body {
+  min-height: 100svh;
 }

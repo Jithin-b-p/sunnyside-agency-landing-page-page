@@ -1,0 +1,29 @@
+.hero {
+  height: 77svh;
+  background-image: url("/images/mobile/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  position: relative;
+
+  &__heading {
+    margin: 0;
+    font-family: var(--ff-secondary);
+    font-weight: 900;
+    font-size: 2.625rem;
+    color: hsl(var(--clr-neutral-500));
+    letter-spacing: 0.55rem;
+    line-height: 1.2;
+    text-align: center;
+
+    position: absolute;
+    top: 9rem;
+  }
+
+  &__arrow {
+    position: absolute;
+    bottom: 25%;
+    left: 45%;
+  }
+}

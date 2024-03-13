@@ -7,9 +7,32 @@
     <title>sunnyside-agency</title>
   </head>
   <body>
-    <header>
-      <img src="" alt="company logo" />
+    <header class="header">
+      <img
+        class="header__logo"
+        src="/images/logo.svg"
+        alt="company logo"
+        width="100"
+        height="25"
+      />
+
+      <nav class="header__navigation"></nav>
+      <img
+        src="/public/images/icon-hamburger.svg"
+        alt=""
+        width="25"
+        height="18"
+        aria-expanded="false"
+        aria-controls="header__navigation"
+        aria-label="open navigation"
+      />
     </header>
+    <main class="main">
+      <section class="hero">
+        <h1 class="hero__heading">WE ARE CREATIVES</h1>
+        <img class="hero__arrow" src="/images/icon-arrow-down.svg" alt="" />
+      </section>
+    </main>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
