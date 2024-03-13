@@ -1,5 +1,5 @@
 .header__navigation {
-  width: 20.5rem;
+  width: 88%;
   padding-block: 2.2rem;
   padding-block-start: 4.3rem;
   font-size: 1.25rem;
@@ -8,7 +8,8 @@
   clip-path: polygon(93% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
 
   position: absolute;
-  top: 5rem;
+  top: 92%;
+  left: 6%;
 }
 
 .navigation__list > *:not(:last-child) {

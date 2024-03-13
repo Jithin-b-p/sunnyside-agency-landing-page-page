@@ -4,3 +4,21 @@
   justify-content: $justify;
   aligh-items: $align;
 }
+
+@mixin after($customColor) {
+  &::after {
+    content: "";
+    display: block;
+
+    width: 108%;
+    height: 0.5rem;
+    background-color: hsl($customColor / var(--opacity));
+    border-radius: 99999px;
+    z-index: -1;
+    position: absolute;
+    bottom: 0;
+    left: -0.35rem;
+
+    transition: all 0.3s;
+  }
+}

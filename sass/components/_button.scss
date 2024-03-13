@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .btn {
   appearance: none;
   border: none;
@@ -15,8 +17,30 @@
     background-color: inherit;
     width: 1.5rem;
     aspect-ratio: 1;
-    background-image: url("/public/images/icon-hamburger.svg");
+    background-image: url("/images/icon-hamburger.svg");
     background-repeat: no-repeat;
     background-position: center;
+  }
+
+  &--about {
+    font-family: var(--ff-secondary);
+    letter-spacing: 2px;
+    background-color: inherit;
+    color: inherit;
+    --opacity: 0.3;
+
+    position: relative;
+
+    &:hover::after {
+      --opacity: 1;
+    }
+  }
+
+  &--about-1 {
+    @include after(var(--clr-primary-yellow));
+  }
+
+  &--about-2 {
+    @include after(var(--clr-primary-red));
   }
 }
