@@ -1,3 +1,5 @@
+@use "../abstracts" as *;
+
 .hero {
   height: 77svh;
   background-image: url("/images/mobile/image-header.jpg");
@@ -87,4 +89,81 @@
     line-height: 1.6;
     padding-inline: 1.2rem;
   }
+}
+
+.testimonial {
+  padding: 4.5rem 1.2rem;
+  text-align: center;
+
+  &--1,
+  &--2,
+  &--3 {
+    @include flex(column);
+    gap: 2rem;
+  }
+  & span {
+    display: block;
+  }
+
+  &-heading {
+    font-family: var(--ff-secondary);
+    font-size: 0.95rem;
+    letter-spacing: 0.35rem;
+    color: hsl(var(--clr-neutral-300));
+    margin-block-end: 4rem;
+  }
+
+  & .user--1 {
+    background-image: url("/images/image-emily.jpg");
+  }
+  & .user--2 {
+    background-image: url("/images/image-thomas.jpg");
+  }
+  & .user--3 {
+    background-image: url("/images/image-jennie.jpg");
+  }
+
+  & .user-image {
+    width: 4.5rem;
+    margin-inline: auto;
+    aspect-ratio: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-radius: 99999px;
+  }
+
+  & .user-review {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: hsl(var(--clr-neutral-200));
+  }
+}
+
+.testimonials {
+  @include flex(column, center, center);
+  gap: 4.5rem;
+}
+
+.user-details {
+  &__name {
+    font-family: var(--ff-secondary);
+    font-size: 1.2rem;
+    margin-block-end: 1rem;
+  }
+
+  &__designation {
+    font-size: 0.95rem;
+    color: hsl(var(--clr-neutral-300));
+  }
+}
+
+.photo-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.photo {
+  width: 100%;
 }
