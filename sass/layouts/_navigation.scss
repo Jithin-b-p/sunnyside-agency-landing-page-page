@@ -1,0 +1,21 @@
+.header__navigation {
+  width: 20.5rem;
+  padding-block: 2.2rem;
+  padding-block-start: 4.3rem;
+  font-size: 1.25rem;
+  text-align: center;
+  background-color: hsl(var(--clr-neutral-500));
+  clip-path: polygon(93% 8%, 100% 0, 100% 100%, 0 100%, 0 8%);
+
+  position: absolute;
+  top: 5rem;
+}
+
+.navigation__list > *:not(:last-child) {
+  color: hsl(var(--clr-neutral-200));
+  padding-block-end: 2rem;
+}
+
+.header__navigation[data-visible="false"] {
+  display: none;
+}

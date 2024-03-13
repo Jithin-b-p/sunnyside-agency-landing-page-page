@@ -16,21 +16,35 @@
         height="25"
       />
 
-      <nav class="header__navigation"></nav>
-      <img
-        src="/public/images/icon-hamburger.svg"
-        alt=""
-        width="25"
-        height="18"
+      <nav class="header__navigation" data-visible="false">
+        <ul class="navigation__list">
+          <li class="nav__about"><a href="#">About</a></li>
+          <li class="nav__services"><a href="#">Services</a></li>
+          <li class="nav__projects"><a href="#">Projects</a></li>
+          <li class="nav__contacts">
+            <button class="btn btn--contact">CONTACT</button>
+          </li>
+        </ul>
+      </nav>
+      <button
+        class="btn btn--menu"
         aria-expanded="false"
         aria-controls="header__navigation"
         aria-label="open navigation"
-      />
+      >
+        <span class="sr-only">Menu</span>
+      </button>
     </header>
     <main class="main">
       <section class="hero">
         <h1 class="hero__heading">WE ARE CREATIVES</h1>
-        <img class="hero__arrow" src="/images/icon-arrow-down.svg" alt="" />
+        <img
+          class="hero__arrow"
+          src="/images/icon-arrow-down.svg"
+          width="36"
+          height="114"
+          alt=""
+        />
       </section>
     </main>
     <script type="module" src="/main.js"></script>

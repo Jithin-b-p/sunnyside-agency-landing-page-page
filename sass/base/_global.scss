@@ -33,6 +33,8 @@
   --clr-neutral-300: 232 10% 55%;
   --clr-neutral-400: 210 4% 67%;
   --clr-neutral-500: 0 0% 100%;
+
+  --clr-primary-yellow: 51 100% 49%;
 }
 
 html {
@@ -41,4 +43,13 @@ html {
 
 body {
   min-height: 100svh;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }

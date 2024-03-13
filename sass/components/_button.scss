@@ -1,0 +1,22 @@
+.btn {
+  appearance: none;
+  border: none;
+  cursor: pointer;
+
+  &--contact {
+    background-color: hsl(var(--clr-primary-yellow));
+    padding: 1.2rem 1.8rem;
+    border-radius: 9999px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  &--menu {
+    background-color: inherit;
+    width: 1.5rem;
+    aspect-ratio: 1;
+    background-image: url("/public/images/icon-hamburger.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

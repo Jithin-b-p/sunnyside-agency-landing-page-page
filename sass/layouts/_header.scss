@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .header {
-  @include flex(row, space-between);
+  @include flex(row, space-between, center);
   padding: 2rem 1.5rem;
 
   position: fixed;
