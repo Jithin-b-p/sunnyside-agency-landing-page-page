@@ -73,7 +73,11 @@
     text-align: center;
     color: hsl(var(--clr-neutral-100));
 
-    @media screen and (min-width: 48em) {
+    @media only screen and (min-width: 48em) and (max-width: 60.375em) {
+      padding: 0.2rem 1.5rem;
+    }
+
+    @media only screen and (min-width: 48em) {
       padding-inline-start: var(--fluid-spce-0-4_8);
       padding-inline-end: 0;
       @include flex(column, center, flex-start);
