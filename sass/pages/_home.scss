@@ -162,7 +162,7 @@
   }
 
   &__description {
-    width: 38ch;
+    max-width: 38ch;
     margin-inline: auto;
 
     line-height: 1.6;
@@ -170,7 +170,7 @@
 }
 
 .testimonial {
-  padding: 4.5rem 1.2rem;
+  padding: var(--fluid-space-4_5-10_5) 1.2rem;
   text-align: center;
 
   &--1,
@@ -178,16 +178,20 @@
   &--3 {
     @include flex(column);
     gap: 2rem;
+
+    @media screen and (min-width: 62em) {
+      gap: 3.4rem;
+    }
   }
   & span {
     display: block;
   }
 
   &-heading {
-    margin-block-end: 4rem;
+    margin-block-end: var(--fluid-space-4-5);
 
     font-family: var(--ff-secondary);
-    font-size: 0.95rem;
+    font-size: var(--fluid-font-0_95-1_3);
     letter-spacing: 0.35rem;
 
     color: hsl(var(--clr-neutral-300));
@@ -215,7 +219,7 @@
   }
 
   & .user-review {
-    width: 34ch;
+    max-width: 36ch;
     margin-inline: auto;
 
     font-size: 1.1rem;
@@ -228,6 +232,11 @@
 .testimonials {
   @include flex(column, center, center);
   gap: 4.5rem;
+
+  @media screen and (min-width: 62em) {
+    @include flex(row, center, center);
+    gap: 1.3rem;
+  }
 }
 
 .user-details {

@@ -49,8 +49,11 @@
   --fluid-space-2-0: clamp(0rem, 2.6957rem + -3.4783vi, 2rem);
   --fluid-space-2_2-0: clamp(0rem, 2.9652rem + -3.8261vi, 2.2rem);
   --fluid-space-4_3-0: clamp(0rem, 5.7957rem + -7.4783vi, 4.3rem);
+  --fluid-space-4_5-10_5: clamp(4.5rem, 2.413rem + 10.4348vi, 10.5rem);
+  --fluid-space-4-5: clamp(4rem, 3.6522rem + 1.7391vi, 5rem);
 
   --fluid-font-2_6-3_6: clamp(2.625rem, 2.2859rem + 1.6957vi, 3.6rem);
+  --fluid-font-0_95-1_3: clamp(0.95rem, 0.8283rem + 0.6087vi, 1.3rem);
 
   --fulid-letter-space: clamp(0.55rem, 0.463rem + 0.4348vi, 0.8rem);
 }
