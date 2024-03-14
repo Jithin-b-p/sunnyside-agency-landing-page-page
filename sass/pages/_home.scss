@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 
 .hero {
-  height: 77svh;
+  height: 100svh;
 
   background-image: url("/images/mobile/image-header.webp");
   background-size: cover;
@@ -48,7 +48,7 @@
   }
 
   @media screen and (min-width: 48em) {
-    height: 140svh;
+    height: 100svh;
 
     background-image: url("/images/desktop/image-header.webp");
     background-size: cover;
