@@ -2,6 +2,7 @@
 
 .header__navigation {
   width: 88%;
+  display: block;
   padding-block-end: var(--fluid-space-2_2-0);
   padding-block-start: var(--fluid-space-4_3-0);
   font-size: 1.25rem;
@@ -17,6 +18,10 @@
     background-color: inherit;
     clip-path: none;
     position: static;
+
+    width: 38%;
+    display: block;
+    padding-inline-end: 0.8rem;
   }
 }
 
@@ -24,10 +29,6 @@
   color: hsl(var(--clr-neutral-200));
   & > *:not(:last-child) {
     padding-block-end: (var(--fluid-space-2-0));
-
-    @media screen and (min-width: 62em) {
-      margin-block: auto;
-    }
   }
 
   @media screen and (min-width: 62em) {
@@ -39,8 +40,6 @@
 .header__navigation[data-visible="false"] {
   display: none;
   @media screen and (min-width: 62em) {
-    width: 38%;
     display: block;
-    padding-inline-end: 0.8rem;
   }
 }

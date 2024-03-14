@@ -14,9 +14,5 @@
   &__logo {
     width: var(--fluid-header-logo-w);
     height: var(--fluid-header-logo-h);
-
-    @media screen and (min-width: 48em) {
-      margin-block: auto;
-    }
   }
 }

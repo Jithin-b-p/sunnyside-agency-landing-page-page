@@ -1,7 +1,7 @@
 @font-face {
   font-family: "Fraunces 144pt";
   src: url("/fonts/Fraunces144ptBold.woff2") format("woff2"),
-    url("Fraunces144ptBold.woff") format("woff");
+    url("/fonts/Fraunces144ptBold.woff") format("woff");
   font-weight: 700;
   font-display: swap;
 }
@@ -17,7 +17,7 @@
 @font-face {
   font-family: "Fraunces 144pt Black";
   src: url("/fonts/Fraunces144ptBlack.woff2") format("woff2"),
-    url("fonts/Fraunces144ptBlack.woff") format("woff");
+    url("/fonts/Fraunces144ptBlack.woff") format("woff");
   font-weight: 900;
   font-display: swap;
 }
@@ -79,4 +79,10 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:focus-visible,
+button:focus-visible {
+  outline: 3px dotted #000;
+  outline-offset: 5px;
 }
