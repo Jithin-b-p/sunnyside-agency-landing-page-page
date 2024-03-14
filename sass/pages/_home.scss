@@ -111,6 +111,11 @@
   }
 }
 
+.services {
+  @media screen and (min-width: 48em) {
+    @include flex(row);
+  }
+}
 .service {
   height: 37.5rem;
   padding-block-start: 25rem;
@@ -118,12 +123,21 @@
 
   color: var(--customColor);
 
+  @media screen and (min-width: 48em) {
+    width: 50%;
+  }
+
   &--1 {
     background-image: url("/images/mobile/image-graphic-design.jpg");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     --customColor: hsl(var(--clr-dark-d-cyan));
+
+    @media screen and (min-width: 48em) {
+      background-image: url("/images/desktop/image-graphic-design.jpg");
+      background-size: cover;
+    }
   }
 
   &--2 {
@@ -132,6 +146,11 @@
     background-size: contain;
     background-repeat: no-repeat;
     --customColor: hsl(var(--clr-dark-blue));
+
+    @media screen and (min-width: 48em) {
+      background-image: url("/images/desktop/image-photography.jpg");
+      background-size: cover;
+    }
   }
 
   &__heading {
