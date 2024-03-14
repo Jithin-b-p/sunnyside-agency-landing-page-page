@@ -51,6 +51,7 @@
   --fluid-space-4_3-0: clamp(0rem, 5.7957rem + -7.4783vi, 4.3rem);
   --fluid-space-4_5-10_5: clamp(4.5rem, 2.413rem + 10.4348vi, 10.5rem);
   --fluid-space-4-5: clamp(4rem, 3.6522rem + 1.7391vi, 5rem);
+  --fluid-spce-0-4_8: clamp(0rem, -1.6696rem + 8.3478vi, 4.8rem);
 
   --fluid-font-2_6-3_6: clamp(2.625rem, 2.2859rem + 1.6957vi, 3.6rem);
   --fluid-font-0_95-1_3: clamp(0.95rem, 0.8283rem + 0.6087vi, 1.3rem);
@@ -64,6 +65,11 @@ html {
 
 body {
   min-height: 100svh;
+}
+
+main {
+  max-width: 120rem;
+  margin-inline: auto;
 }
 
 ul {

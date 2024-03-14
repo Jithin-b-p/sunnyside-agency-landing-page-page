@@ -1,6 +1,8 @@
 @use "../abstracts" as *;
 
 .footer {
+  max-width: 120rem;
+  margin-inline: auto;
   padding: 4rem 2.5rem;
   @include flex(column, center, center);
   gap: 2rem;
