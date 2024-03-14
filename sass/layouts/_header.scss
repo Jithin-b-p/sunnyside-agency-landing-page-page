@@ -1,15 +1,22 @@
 @use "../abstracts" as *;
 
 .header {
+  max-width: 120rem;
+  margin-inline: auto;
   @include flex(row, space-between, center);
-  padding: 2rem 1.5rem;
+  padding: 2rem var(--fluid-header-px);
 
   position: fixed;
   left: 0;
   right: 0;
   z-index: 50;
 
-  & svg {
-    fill: hsl(var(--clr-neutral-500));
+  &__logo {
+    width: var(--fluid-header-logo-w);
+    height: var(--fluid-header-logo-h);
+
+    @media screen and (min-width: 48em) {
+      margin-block: auto;
+    }
   }
 }

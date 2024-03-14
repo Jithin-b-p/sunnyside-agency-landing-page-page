@@ -1,7 +1,9 @@
+@use "../abstracts" as *;
+
 .header__navigation {
   width: 88%;
-  padding-block: 2.2rem;
-  padding-block-start: 4.3rem;
+  padding-block-end: var(--fluid-space-2_2-0);
+  padding-block-start: var(--fluid-space-4_3-0);
   font-size: 1.25rem;
   text-align: center;
   background-color: hsl(var(--clr-neutral-500));
@@ -10,13 +12,35 @@
   position: absolute;
   top: 92%;
   left: 6%;
+
+  @media screen and (min-width: 62em) {
+    background-color: inherit;
+    clip-path: none;
+    position: static;
+  }
 }
 
-.navigation__list > *:not(:last-child) {
+.navigation__list {
   color: hsl(var(--clr-neutral-200));
-  padding-block-end: 2rem;
+  & > *:not(:last-child) {
+    padding-block-end: (var(--fluid-space-2-0));
+
+    @media screen and (min-width: 62em) {
+      margin-block: auto;
+    }
+  }
+
+  @media screen and (min-width: 62em) {
+    @include flex(row, space-between, center);
+    color: hsl(var(--clr-neutral-500));
+  }
 }
 
 .header__navigation[data-visible="false"] {
   display: none;
+  @media screen and (min-width: 62em) {
+    width: 38%;
+    display: block;
+    padding-inline-end: 0.8rem;
+  }
 }

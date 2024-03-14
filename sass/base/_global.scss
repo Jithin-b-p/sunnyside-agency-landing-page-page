@@ -40,6 +40,19 @@
   --clr-dark-blue: 198 62% 26%;
   --clr-dark-m-cyan: 168 34% 41%;
   --clr-light-d-cyan: 167 44% 70%;
+
+  --fluid-header-px: clamp(1.5rem, 1.187rem + 1.5652vi, 2.4rem);
+
+  --fluid-header-logo-w: clamp(7.7rem, 6.6217rem + 5.3913vi, 10.8rem);
+  --fluid-header-logo-h: clamp(1.5rem, 1.3261rem + 0.8696vi, 2rem);
+
+  --fluid-space-2-0: clamp(0rem, 2.6957rem + -3.4783vi, 2rem);
+  --fluid-space-2_2-0: clamp(0rem, 2.9652rem + -3.8261vi, 2.2rem);
+  --fluid-space-4_3-0: clamp(0rem, 5.7957rem + -7.4783vi, 4.3rem);
+
+  --fluid-font-2_6-3_6: clamp(2.625rem, 2.2859rem + 1.6957vi, 3.6rem);
+
+  --fulid-letter-space: clamp(0.55rem, 0.463rem + 0.4348vi, 0.8rem);
 }
 
 html {

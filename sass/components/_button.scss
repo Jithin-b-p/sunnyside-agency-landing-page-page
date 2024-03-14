@@ -6,11 +6,17 @@
   cursor: pointer;
 
   &--contact {
+    font-family: var(--ff-secondary);
     background-color: hsl(var(--clr-primary-yellow));
     padding: 1.2rem 1.8rem;
     border-radius: 9999px;
     font-size: 1.2rem;
     font-weight: bold;
+
+    @media screen and (min-width: 48em) {
+      background-color: hsl(var(--clr-neutral-500));
+      font-size: 1rem;
+    }
   }
 
   &--menu {
@@ -20,6 +26,10 @@
     background-image: url("/images/icon-hamburger.svg");
     background-repeat: no-repeat;
     background-position: center;
+
+    @media screen and (min-width: 62em) {
+      display: none;
+    }
   }
 
   &--about {

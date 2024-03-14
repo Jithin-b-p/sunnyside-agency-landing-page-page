@@ -2,6 +2,7 @@
 
 .hero {
   height: 77svh;
+
   background-image: url("/images/mobile/image-header.jpg");
   background-size: cover;
   background-position: center;
@@ -10,24 +11,47 @@
   position: relative;
 
   &__heading {
+    width: min(85%, 50rem);
+
     font-family: var(--ff-secondary);
     font-weight: 900;
-    font-size: 2.625rem;
-    color: hsl(var(--clr-neutral-500));
-    letter-spacing: 0.55rem;
+    font-size: var(--fluid-font-2_6-3_6);
+    letter-spacing: var(--fulid-letter-space);
     line-height: 1.2;
     text-align: center;
+
+    color: hsl(var(--clr-neutral-500));
 
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -125%);
+    transform: translate(-50%, -121%);
+    @media screen and (max-width: 22em) {
+      font-size: 1.5rem;
+    }
+
+    @media screen and (min-width: 62em) {
+      transform: translate(-50%, -292%);
+    }
   }
 
   &__arrow {
     position: absolute;
-    bottom: 25%;
-    left: 45%;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, 20%);
+
+    @media screen and (min-width: 48em) {
+      transform: translate(-50%, -35%);
+    }
+  }
+
+  @media screen and (min-width: 48em) {
+    height: 140svh;
+
+    background-image: url("/images/desktop/image-header.jpg");
+    background-size: cover;
   }
 }
 
@@ -37,30 +61,37 @@
   }
 
   &__details {
+    max-width: 60ch;
+    margin-inline: auto;
     padding: 3.5rem 1.5rem;
+
     text-align: center;
     color: hsl(var(--clr-neutral-100));
   }
   &__heading {
+    margin-bottom: 1rem;
+
     font-family: var(--ff-secondary);
     font-size: 2.3rem;
     font-weight: 700;
-    margin-bottom: 1rem;
   }
 
   &__description {
+    margin-bottom: 2rem;
+
     font-size: 1.1rem;
     line-height: 1.8;
+
     color: hsl(var(--clr-neutral-300));
-    margin-bottom: 2rem;
   }
 }
 
 .service {
   height: 37.5rem;
   padding-block-start: 25rem;
-  color: var(--customColor);
   text-align: center;
+
+  color: var(--customColor);
 
   &--1 {
     background-image: url("/images/mobile/image-graphic-design.jpg");
@@ -79,15 +110,18 @@
   }
 
   &__heading {
+    margin-bottom: 2.3rem;
+
     font-family: var(--ff-secondary);
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2.3rem;
   }
 
   &__description {
+    width: 38ch;
+    margin-inline: auto;
+
     line-height: 1.6;
-    padding-inline: 1.2rem;
   }
 }
 
@@ -106,11 +140,13 @@
   }
 
   &-heading {
+    margin-block-end: 4rem;
+
     font-family: var(--ff-secondary);
     font-size: 0.95rem;
     letter-spacing: 0.35rem;
+
     color: hsl(var(--clr-neutral-300));
-    margin-block-end: 4rem;
   }
 
   & .user--1 {
@@ -126,17 +162,21 @@
   & .user-image {
     width: 4.5rem;
     margin-inline: auto;
-    aspect-ratio: 1;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 
+    aspect-ratio: 1;
     border-radius: 99999px;
   }
 
   & .user-review {
+    width: 34ch;
+    margin-inline: auto;
+
     font-size: 1.1rem;
     line-height: 1.8;
+
     color: hsl(var(--clr-neutral-200));
   }
 }
@@ -148,9 +188,9 @@
 
 .user-details {
   &__name {
+    margin-block-end: 1rem;
     font-family: var(--ff-secondary);
     font-size: 1.2rem;
-    margin-block-end: 1rem;
   }
 
   &__designation {
@@ -162,6 +202,10 @@
 .photo-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @media screen and (min-width: 48em) {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
 
 .photo {

@@ -20,11 +20,17 @@
 }
 
 .navigation-list {
-  @include flex(row, space-between);
+  max-width: 20rem;
+  margin-inline: auto;
+
+  @include flex(row, space-between, center);
 }
 
 .social-navigation {
+  max-width: 10rem;
+  margin-inline: auto;
   padding-block-start: 4rem;
-  padding-inline: 4.2rem;
-  @include flex(row, space-between);
+
+  @include flex(row, space-around, center);
+  gap: 2rem;
 }
