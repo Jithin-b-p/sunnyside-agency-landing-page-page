@@ -1,8 +1,6 @@
 @use "../abstracts" as *;
 
 .footer {
-  max-width: 120rem;
-  margin-inline: auto;
   padding: 4rem 2.5rem;
   @include flex(column, center, center);
   gap: 2rem;
@@ -26,6 +24,11 @@
   margin-inline: auto;
 
   @include flex(row, space-between, center);
+  gap: 2rem;
+
+  & a:hover {
+    color: white;
+  }
 }
 
 .social-navigation {

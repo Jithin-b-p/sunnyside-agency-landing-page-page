@@ -1,9 +1,9 @@
 @use "../abstracts" as *;
 
 .hero {
-  height: 77svh;
+  height: 100svh;
 
-  background-image: url("/images/mobile/image-header.jpg");
+  background-image: url("/images/mobile/image-header.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -50,7 +50,7 @@
   @media screen and (min-width: 48em) {
     height: 140svh;
 
-    background-image: url("/images/desktop/image-header.jpg");
+    background-image: url("/images/desktop/image-header.webp");
     background-size: cover;
   }
 }
@@ -58,6 +58,7 @@
 .about-section {
   & img {
     width: 100%;
+    height: 100%;
 
     @media screen and (min-width: 48em) {
       width: 50%;
@@ -83,8 +84,7 @@
     margin-bottom: 1rem;
 
     font-family: var(--ff-secondary);
-    // font-size: 2.3rem;
-    font-size: 2.8rem;
+    font-size: var(--fluid-font-2_3-2_8);
     font-weight: 700;
     @media screen and (min-width: 48em) {
       padding-inline-end: 4rem;
@@ -97,7 +97,7 @@
     font-size: 1.1rem;
     line-height: 1.8;
 
-    color: hsl(var(--clr-neutral-300));
+    color: hsl(var(--clr-neutral-200));
   }
 
   @media screen and (min-width: 48em) {
@@ -128,27 +128,27 @@
   }
 
   &--1 {
-    background-image: url("/images/mobile/image-graphic-design.jpg");
+    background-image: url("/images/mobile/image-graphic-design.webp");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     --customColor: hsl(var(--clr-dark-d-cyan));
 
     @media screen and (min-width: 48em) {
-      background-image: url("/images/desktop/image-graphic-design.jpg");
+      background-image: url("/images/desktop/image-graphic-design.webp");
       background-size: cover;
     }
   }
 
   &--2 {
-    background-image: url("/images/mobile/image-photography.jpg");
+    background-image: url("/images/mobile/image-photography.webp");
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     --customColor: hsl(var(--clr-dark-blue));
 
     @media screen and (min-width: 48em) {
-      background-image: url("/images/desktop/image-photography.jpg");
+      background-image: url("/images/desktop/image-photography.webp");
       background-size: cover;
     }
   }
@@ -198,13 +198,13 @@
   }
 
   & .user--1 {
-    background-image: url("/images/image-emily.jpg");
+    background-image: url("/images/image-emily.webp");
   }
   & .user--2 {
-    background-image: url("/images/image-thomas.jpg");
+    background-image: url("/images/image-thomas.webp");
   }
   & .user--3 {
-    background-image: url("/images/image-jennie.jpg");
+    background-image: url("/images/image-jennie.webp");
   }
 
   & .user-image {
@@ -248,14 +248,13 @@
 
   &__designation {
     font-size: 0.95rem;
-    color: hsl(var(--clr-neutral-300));
+    color: hsl(var(--clr-neutral-200));
   }
 }
 
 .photo-gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-
   @media screen and (min-width: 48em) {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -263,4 +262,5 @@
 
 .photo {
   width: 100%;
+  height: 100%;
 }

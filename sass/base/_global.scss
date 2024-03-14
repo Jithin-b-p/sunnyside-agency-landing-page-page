@@ -55,6 +55,7 @@
 
   --fluid-font-2_6-3_6: clamp(2.625rem, 2.2859rem + 1.6957vi, 3.6rem);
   --fluid-font-0_95-1_3: clamp(0.95rem, 0.8283rem + 0.6087vi, 1.3rem);
+  --fluid-font-2_3-2_8: clamp(2.3rem, 2.1261rem + 0.8696vi, 2.8rem);
 
   --fulid-letter-space: clamp(0.55rem, 0.463rem + 0.4348vi, 0.8rem);
 }
@@ -79,6 +80,7 @@ ul {
 a {
   text-decoration: none;
   color: inherit;
+  transition: all 0.4s;
 }
 
 a:focus-visible,
