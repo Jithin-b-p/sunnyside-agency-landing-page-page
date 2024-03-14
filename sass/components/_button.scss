@@ -15,14 +15,14 @@
 
     transition: all 0.3s;
 
-    &:hover {
-      background: hsl(var(--clr-neutral-500) / 0.3);
-      color: hsl(var(--clr-neutral-500));
-    }
-
-    @media screen and (min-width: 48em) {
+    @media screen and (min-width: 62em) {
       background-color: hsl(var(--clr-neutral-500));
       font-size: 1rem;
+
+      &:hover {
+        background: hsl(var(--clr-neutral-500) / 0.3);
+        color: hsl(var(--clr-neutral-500));
+      }
     }
   }
 

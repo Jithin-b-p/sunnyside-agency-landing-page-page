@@ -4,6 +4,14 @@ const navMenu = document.querySelector(".header__navigation");
 const menuBtn = document.querySelector(".btn--menu");
 const body = document.querySelector("body");
 
+window.addEventListener("resize", () => {
+  if (window.innerWidth > 992) {
+    navMenu.setAttribute("data-visible", "false");
+    menuBtn.setAttribute("aria-expanded", "false");
+    body.classList.remove("no-scroll");
+  }
+});
+
 menuBtn.addEventListener("click", () => {
   const visibility = navMenu.getAttribute("data-visible");
 
