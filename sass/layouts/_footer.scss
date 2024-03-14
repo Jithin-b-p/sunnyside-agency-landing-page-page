@@ -1,0 +1,30 @@
+@use "../abstracts" as *;
+
+.footer {
+  padding: 4rem 2.5rem;
+  @include flex(column, center, center);
+  gap: 2rem;
+
+  background-color: hsl(var(--clr-light-d-cyan));
+
+  &__logo {
+    width: 11rem;
+    height: 2.3rem;
+    margin-inline: auto;
+  }
+
+  &__navigation {
+    font-size: 1.2rem;
+    color: hsl(var(--clr-dark-d-cyan));
+  }
+}
+
+.navigation-list {
+  @include flex(row, space-between);
+}
+
+.social-navigation {
+  padding-block-start: 4rem;
+  padding-inline: 4.2rem;
+  @include flex(row, space-between);
+}
